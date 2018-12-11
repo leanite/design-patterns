@@ -12,14 +12,14 @@ public class Editor {
         JFrame frame = new JFrame("Text editor");
         JPanel content = new JPanel();
 
-        setupFrame(frame, content);
+        setupFrame(frame);
         setupMainLayout(content);
         initButtons(content);
 
         frame.setContentPane(content);
     }
 
-    private void setupFrame(JFrame frame, JPanel content) {
+    private void setupFrame(JFrame frame) {
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setSize(450, 200);
         frame.setLocationRelativeTo(null);
